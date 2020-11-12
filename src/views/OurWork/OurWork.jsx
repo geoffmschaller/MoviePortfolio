@@ -10,7 +10,7 @@ const OurWork = () => {
 			<div className={styles.movieList}>
 				{
 					MovieList.map((mov, index) => {
-						return <MovieCard key={index} title={mov.title} link={mov.url} image={mov.mainImg}/>
+						return <MovieCard key={index} title={mov.title} link={`/our-work/${mov.url}`} image={mov.mainImg}/>
 					})
 				}
 			</div>

@@ -10,7 +10,7 @@ const MovieData = [
 		title: 'The Athlete',
 		mainImg: ATHLETE,
 		secondaryImg: ATHLETE2,
-		url: '/our-work/the-athlete',
+		url: 'the-athlete',
 		awards: [
 			{
 				title: 'Truly A masterpiece',
@@ -32,7 +32,7 @@ const MovieData = [
     {
 		title: 'Good Times',
 		mainImg: GOODTIMES,
-		url: '/our-work/good-times',
+		url: 'good-times',
 		secondaryImg: GOODTIMES2,
 		awards: [
 			{
@@ -55,7 +55,7 @@ const MovieData = [
     {
 		title: 'The Racer',
 		mainImg: THERACER,
-		url: '/our-work/the-racer',
+		url: 'the-racer',
 		secondaryImg: THERACER2,
 		awards: [
 			{
