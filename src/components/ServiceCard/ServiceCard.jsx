@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './ServiceCard.module.sass';
 
 const ServiceCard = props => {
-	return (
+	return ( 
 		<div className={styles.serviceCard}>
 			<div className={styles.icon}>
 				<img src={props.icon} alt="" />
