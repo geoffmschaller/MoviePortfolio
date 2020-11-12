@@ -4,7 +4,7 @@ import FaqQuestion from '../FaqQuestion/FaqQuestion';
 
 const FaqSection = () => {
 
-	const faqQuestions = [
+	const faqQuestions = [ 
 		{
 			question: 'How do I start?',
 			answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ad vel quasi sapiente provident aut hic molestiae numquam adipisci distinctio.'
