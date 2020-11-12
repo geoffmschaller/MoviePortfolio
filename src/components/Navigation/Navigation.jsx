@@ -7,7 +7,7 @@ const Navigation = () => {
 		<div className={styles.navigation}>
 			<Link to={'/'} className={styles.logo}>Capture</Link>
 			<div className={styles.menu}>
-				<Link to={'/about-us'}>About Us</Link>
+				<Link to={'/'}>About Us</Link>
 				<Link to={'/our-work'}>Our Work</Link>
 				<Link to={'/contact-us'}>Contact Us</Link>
 			</div>
