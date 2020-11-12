@@ -7,7 +7,7 @@ const AboutSection = () => {
 	return (
 		<div className={styles.aboutUs}>
 			<div className={styles.description}>
-					<div className={styles.title}>
+				<div className={styles.title}>
 					<div className={styles.slice}>We work to make</div>
 					<div className={styles.slice}>your <span className={styles.dream}>dreams</span> come</div>
 					<div className={styles.slice}>true!</div>
