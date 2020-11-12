@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './AboutSection.module.sass';
-import IMAGE from '../../assets/images/home1.png';
+
+import HOME1 from '../../assets/images/home1.png';
 
 const AboutSection = () => {
 	return (
@@ -14,8 +15,8 @@ const AboutSection = () => {
 				<p>Contact us for any videography ideas that you have. We have professionals with amazing skills.</p>
 				<button>Contact </button>
 			</div>
-			<div className={styles.image}>
-				<img src={IMAGE} alt=""/>
+			<div className={styles.sectionImage}>
+				<img src={HOME1} alt=""/>
 			</div>
 		</div>
 	)
