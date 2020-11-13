@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './ServicesSection.module.sass';
 import ServiceCard from '../ServiceCard/ServiceCard';
-import FadeOnScroll from '../FadeOnScroll/FadeOnScroll';
+import FadeOnScroll from '../../animations/FadeOnScroll';
 
 import HOME2 from '../../assets/images/home2.png';
 import CLOCK from '../../assets/images/clock.svg';

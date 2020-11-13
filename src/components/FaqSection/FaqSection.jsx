@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './FaqSection.module.sass';
 import FaqQuestion from '../FaqQuestion/FaqQuestion';
-import FadeOnScroll from '../FadeOnScroll/FadeOnScroll';
+import FadeOnScroll from '../../animations/FadeOnScroll';
 
 const FaqSection = () => {
 
@@ -26,7 +26,9 @@ const FaqSection = () => {
 	return (
 		<FadeOnScroll>
 			<div className={styles.faqSection}>
-				<div className={styles.title}>Any Questions <span className={styles.faq}>FAQ</span></div>
+				<div className={styles.title}>
+					Any Questions <span className={styles.faq}>FAQ</span>
+				</div>
 				<div className={styles.questions}>
 					{
 						faqQuestions.map((q, index) => {

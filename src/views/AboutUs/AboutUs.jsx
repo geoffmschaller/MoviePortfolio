@@ -1,19 +1,18 @@
 import React from 'react';
+import FadeOnScroll from '../../animations/FadeOnScroll';
+import PageTransition from '../../animations/PageTransition';
 import AboutSection from '../../components/AboutSection/AboutSection';
 import FaqSection from '../../components/FaqSection/FaqSection';
 import ServicesSection from '../../components/ServicesSection/ServicesSection';
 import styles from './AboutUs.module.sass';
-import { motion } from 'framer-motion';
 
-import PageTransition from '../../animations/PageTransition';
-
-const AboutUs = () => {
+const AboutUs = () => {	
 	return (
-		<motion.div initial={PageTransition.start} animate={PageTransition.finish} exit={PageTransition.exit} className={styles.aboutUs}>
+		<PageTransition className={styles.aboutUs}>
 			<AboutSection />
 			<ServicesSection />
 			<FaqSection/>
-		</motion.div>
+		</PageTransition>
 	)
 }
 

@@ -16,7 +16,7 @@ const MovieDetails = () => {
 		})[0]
 	);
 	return (
-		<motion.div initial={PageTransition.start} animate={PageTransition.finish} exit={PageTransition.exit} className={styles.movieDetails}>
+		<PageTransition className={styles.movieDetails}>
 			<div className={styles.header}>
 				<img src={selectedMovie.mainImg} alt="" />
 				<div className={styles.titleContainer}>
@@ -33,7 +33,8 @@ const MovieDetails = () => {
 			<div className={styles.imageDisplay}>
 				<img src={selectedMovie.secondaryImg} alt=""/>
 			</div>
-		</motion.div>
+		</PageTransition>
+		
 	)
 }
 
