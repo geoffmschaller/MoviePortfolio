@@ -12,7 +12,9 @@ const MovieCard = props => {
 			<div className={styles.title}>{props.title}</div>
 			<motion.div {...Expand()} className={styles.border} />
 			<Link to={props.link} className={styles.image}>
-				<motion.img {...ScaleDown()} src={props.image}/>
+				<div className={styles.imageHolder}>
+					<motion.img {...ScaleDown()} src={props.image}/>
+				</div>
 			</Link>
 		</div>
 	)

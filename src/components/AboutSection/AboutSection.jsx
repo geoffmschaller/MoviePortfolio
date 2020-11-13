@@ -27,9 +27,9 @@ const AboutSection = () => {
 				<motion.p {...FadeIn(2)}>Contact us for any videography ideas that you have. We have professionals with amazing skills.</motion.p>
 				<button>Contact </button>
 			</div>
-			<motion.div {...ScaleDown(1)} className={styles.sectionImage}>
-				<img src={HOME1} alt=""/>
-			</motion.div>
+			<div className={styles.sectionImage}>
+				<motion.img {...ScaleDown(1)} src={HOME1} alt=""/>
+			</div>
 			<motion.div>
 				<Wave/>
 			</motion.div>

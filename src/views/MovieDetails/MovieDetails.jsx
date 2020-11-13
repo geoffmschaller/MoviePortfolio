@@ -6,6 +6,7 @@ import AwardCard from '../../components/AwardCard/AwardCard';
 import { motion } from 'framer-motion';
 
 import PageTransition from '../../animations/PageTransition';
+import FadeSlideDown from '../../animations/FadeSlideDown';
 
 const MovieDetails = () => {
 	const history = useHistory();
@@ -17,8 +18,10 @@ const MovieDetails = () => {
 	return (
 		<motion.div {...PageTransition(1)} className={styles.movieDetails}>
 			<div className={styles.header}>
-				<div className={styles.title}>{selectedMovie.title}</div>
-				<img src={selectedMovie.mainImg} alt=""/>
+				<img src={selectedMovie.mainImg} alt="" />
+				<div className={styles.titleContainer}>
+					<motion.div {...FadeSlideDown()} className={styles.title}>{selectedMovie.title}</motion.div>
+				</div>
 			</div>
 			<div className={styles.awardsList}>
 				{
