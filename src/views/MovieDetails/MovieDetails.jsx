@@ -3,7 +3,6 @@ import { useHistory } from 'react-router-dom';
 import styles from './MovieDetails.module.sass';
 import MovieList from '../../data/MovieList';
 import AwardCard from '../../components/AwardCard/AwardCard';
-import { motion } from 'framer-motion';
 
 import PageTransition from '../../animations/PageTransition';
 import FadeSlideDown from '../../animations/FadeSlideDown';
@@ -20,13 +19,15 @@ const MovieDetails = () => {
 			<div className={styles.header}>
 				<img src={selectedMovie.mainImg} alt="" />
 				<div className={styles.titleContainer}>
-					<motion.div initial={FadeSlideDown.start} animate={FadeSlideDown.finish} className={styles.title}>{selectedMovie.title}</motion.div>
+					<FadeSlideDown className={styles.title}>
+						{selectedMovie.title}
+					</FadeSlideDown>
 				</div>
 			</div>
 			<div className={styles.awardsList}>
 				{
 					selectedMovie.awards.map((aw, index) => {
-						return <AwardCard title={aw.title} description={aw.description}/>
+						return <AwardCard key={index} title={aw.title} description={aw.description}/>
 					})
 				}
 			</div>
