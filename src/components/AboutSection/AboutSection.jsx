@@ -7,6 +7,7 @@ import HOME1 from '../../assets/images/home1.png';
 import AboutTitleAnimation from '../../animations/AboutTitleAnimation';
 import FadeIn from '../../animations/FadeIn';
 import PhotoZoomOut from '../../animations/PhotoZoomOut';
+import Wave from '../Wave/Wave';
 
 const AboutSection = () => {
 	return (
@@ -28,6 +29,9 @@ const AboutSection = () => {
 			</div>
 			<motion.div {...PhotoZoomOut(1)} className={styles.sectionImage}>
 				<img src={HOME1} alt=""/>
+			</motion.div>
+			<motion.div>
+				<Wave/>
 			</motion.div>
 		</div>
 	)
