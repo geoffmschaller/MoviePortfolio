@@ -1,13 +1,13 @@
-const Expand = (duration = 1) => ({
-	initial: {
+const Expand = {
+	start: {
 		width: 0
 	},
-	animate: {
+	finish: {
 		width: '100%',
 		transition: {
-			duration: duration
+			duration: 1
 		}
 	}
-});
+};
 	
 export default Expand;

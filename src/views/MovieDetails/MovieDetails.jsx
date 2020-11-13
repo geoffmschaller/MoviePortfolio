@@ -16,11 +16,11 @@ const MovieDetails = () => {
 		})[0]
 	);
 	return (
-		<motion.div {...PageTransition(1)} className={styles.movieDetails}>
+		<motion.div initial={PageTransition.start} animate={PageTransition.finish} exit={PageTransition.exit} className={styles.movieDetails}>
 			<div className={styles.header}>
 				<img src={selectedMovie.mainImg} alt="" />
 				<div className={styles.titleContainer}>
-					<motion.div {...FadeSlideDown()} className={styles.title}>{selectedMovie.title}</motion.div>
+					<motion.div initial={FadeSlideDown.start} animate={FadeSlideDown.finish} className={styles.title}>{selectedMovie.title}</motion.div>
 				</div>
 			</div>
 			<div className={styles.awardsList}>

@@ -9,7 +9,7 @@ import PageTransition from '../../animations/PageTransition';
 
 const AboutUs = () => {
 	return (
-		<motion.div {...PageTransition(1)} className={styles.aboutUs}>
+		<motion.div initial={PageTransition.start} animate={PageTransition.finish} exit={PageTransition.exit} className={styles.aboutUs}>
 			<AboutSection />
 			<ServicesSection />
 			<FaqSection/>

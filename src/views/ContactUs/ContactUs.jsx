@@ -6,7 +6,7 @@ import PageTransition from '../../animations/PageTransition';
 
 const ContactUs = () => {
 	return (
-		<motion.div {...PageTransition(1)} className={styles.contactUs}>CONTACT US</motion.div>
+		<motion.div initial={PageTransition.start} animate={PageTransition.finish} exit={PageTransition.exit} className={styles.contactUs}>CONTACT US</motion.div>
 	)
 }
 

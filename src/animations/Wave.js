@@ -1,16 +1,16 @@
-const Wave = (duration = 1) => ({
-	initial: {
+const Wave = {
+	start: {
 		pathLength: 0,
 		pathOffset: 0
 	},
-	animate: {
+	finish: {
 		pathLength: 1,
 		pathOffset: 0,
 		transition: {
-			duration: duration,
+			duration: 1,
 			ease: 'easeOut'
 		}
 	}
-});
+};
 	
 export default Wave;

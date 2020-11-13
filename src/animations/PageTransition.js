@@ -1,8 +1,8 @@
-const PageTransition = (duration = 1) => ({
-	initial: {
+const PageTransition = {
+	start: {
 		opacity: 0
 	},
-	animate: {
+	finish: {
 		opacity: 1,
 		transition: {
 			staggerChildren: 0.25,
@@ -14,6 +14,6 @@ const PageTransition = (duration = 1) => ({
 		opacity: 0,
     	transition: { ease: 'easeOut', duration: 0.5 }
 	}
-});
+};
 	
 export default PageTransition;

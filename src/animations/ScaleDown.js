@@ -1,17 +1,17 @@
-const ScaleDown = (duration = 1) => ({
-	initial: {
+const ScaleDown = {
+	start: {
 		scale: 1.5,
 		opacity: 0
 	},
-	animate: {
+	finish: {
 		opacity: 1,
 		scale: 1,
 		transition: {
-			duration: duration,
+			duration: 1,
 			ease: 'easeOut',
 			when: ""
 		}
 	}
-});
+};
 	
 export default ScaleDown;

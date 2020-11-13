@@ -9,7 +9,7 @@ import PageTransition from '../../animations/PageTransition';
 
 const OurWork = () => {
 	return (
-		<motion.div {...PageTransition(1)} className={styles.ourWork}>
+		<motion.div initial={PageTransition.start} animate={PageTransition.finish} exit={PageTransition.exit} className={styles.ourWork}>
 			<div className={styles.movieList}>
 				{
 					MovieList.map((mov, index) => {

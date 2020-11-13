@@ -10,10 +10,10 @@ const MovieCard = props => {
 	return (
 		<div className={styles.movieCard}>
 			<div className={styles.title}>{props.title}</div>
-			<motion.div {...Expand()} className={styles.border} />
+			<motion.div initial={Expand.start} animate={Expand.finish} className={styles.border} />
 			<Link to={props.link} className={styles.image}>
 				<div className={styles.imageHolder}>
-					<motion.img {...ScaleDown()} src={props.image}/>
+					<motion.img initial={ScaleDown.start} animate={ScaleDown.finish} src={props.image}/>
 				</div>
 			</Link>
 		</div>

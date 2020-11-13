@@ -1,13 +1,13 @@
-const FadeIn = (duration = 1) => ({
-	initial: {
+const FadeIn = {
+	start: {
 		opacity: 0
 	},
-	animate: {
+	finish: {
 		opacity: 1,
 		transition: {
-			duration: duration
+			duration: 1
 		}
 	}
-});
+};
 	
 export default FadeIn;

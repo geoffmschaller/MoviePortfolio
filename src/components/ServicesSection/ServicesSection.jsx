@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './ServicesSection.module.sass';
 import ServiceCard from '../ServiceCard/ServiceCard';
+import { useInView } from 'react-intersection-observer';
+import { useAnimation, motion } from 'framer-motion';
 
 import HOME2 from '../../assets/images/home2.png';
 import CLOCK from '../../assets/images/clock.svg';
@@ -8,7 +10,18 @@ import DIAPHRAGM from '../../assets/images/diaphragm.svg';
 import MONEY from '../../assets/images/money.svg';
 import TEAMWORK from '../../assets/images/teamwork.svg';
 
+import ScaleDown from '../../animations/ScaleDown';
+
 const ServicesSection = () => {
+
+	const controls = useAnimation();
+	const [element, view] = useInView({ threshold: 0.5 });
+	
+	if (view) {
+		controls.start('animate');
+	} else {
+		controls.start('initial');
+	}
 
 	const cardItems = [
 		{
@@ -36,7 +49,7 @@ const ServicesSection = () => {
 	return (
 		<div className={styles.servicesSection}>
 			<div className={styles.sectionImage}>
-				<img src={HOME2} alt=""/>
+				<motion.img initial={ScaleDown.start} animate={ScaleDown.finish} ref={element} src={HOME2} alt=""/>
 			</div>
 			<div className={styles.description}>
 				<div className={styles.title}>High <span className={styles.quality}>quality</span>	services</div>
