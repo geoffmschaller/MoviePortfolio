@@ -3,6 +3,9 @@ import { useHistory } from 'react-router-dom';
 import styles from './MovieDetails.module.sass';
 import MovieList from '../../data/MovieList';
 import AwardCard from '../../components/AwardCard/AwardCard';
+import { motion } from 'framer-motion';
+
+import PageTransition from '../../animations/PageTransition';
 
 const MovieDetails = () => {
 	const history = useHistory();
@@ -12,7 +15,7 @@ const MovieDetails = () => {
 		})[0]
 	);
 	return (
-		<div className={styles.movieDetails}>
+		<motion.div {...PageTransition(1)} className={styles.movieDetails}>
 			<div className={styles.header}>
 				<div className={styles.title}>{selectedMovie.title}</div>
 				<img src={selectedMovie.mainImg} alt=""/>
@@ -27,7 +30,7 @@ const MovieDetails = () => {
 			<div className={styles.imageDisplay}>
 				<img src={selectedMovie.secondaryImg} alt=""/>
 			</div>
-		</div>
+		</motion.div>
 	)
 }
 
