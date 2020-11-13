@@ -38,14 +38,12 @@ const ServicesSection = () => {
 		<FadeOnScroll>
 			<div className={styles.servicesSection}>
 				<div className={styles.sectionImage}>
-					<img
-						src={HOME2}
-						alt="" />
+					<img src={HOME2} alt=""/>
 				</div>
 				<div className={styles.description}>
 					<div className={styles.title}>
 						High <span className={styles.quality}>quality</span> services
-						</div>
+					</div>
 					<div className={styles.cards}>
 						{
 							cardItems.map((card, index) => {

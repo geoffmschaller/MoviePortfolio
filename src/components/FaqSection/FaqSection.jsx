@@ -32,7 +32,11 @@ const FaqSection = () => {
 				<div className={styles.questions}>
 					{
 						faqQuestions.map((q, index) => {
-							return <FaqQuestion key={index} question={q.question} answer={q.answer}/>
+							return <FaqQuestion
+								key={index}
+								question={q.question}
+								answer={q.answer}
+							/>
 						})
 					}
 				</div>

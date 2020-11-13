@@ -27,7 +27,11 @@ const MovieDetails = () => {
 			<div className={styles.awardsList}>
 				{
 					selectedMovie.awards.map((aw, index) => {
-						return <AwardCard key={index} title={aw.title} description={aw.description}/>
+						return <AwardCard
+							key={index}
+							title={aw.title}
+							description={aw.description}
+						/>
 					})
 				}
 			</div>

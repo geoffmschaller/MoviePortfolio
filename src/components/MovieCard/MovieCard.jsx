@@ -12,10 +12,7 @@ const MovieCard = props => {
 			<div className={styles.movieCard}>
 				<div className={styles.title}>{props.title}</div>
 				<ExpandWidth className={styles.border}/>
-				<Link
-					to={props.link}
-					className={styles.image}
-				>
+				<Link to={props.link} className={styles.image}>
 					<div className={styles.imageHolder}>
 						<ScaleDown>
 							<img src={props.image} alt=""/>
