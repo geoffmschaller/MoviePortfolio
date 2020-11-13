@@ -1,4 +1,4 @@
-const PhotoZoomOut = (duration = 1) => ({
+const ScaleDown = (duration = 1) => ({
 	initial: {
 		scale: 1.5,
 		opacity: 0
@@ -14,4 +14,4 @@ const PhotoZoomOut = (duration = 1) => ({
 	}
 });
 	
-export default PhotoZoomOut;
+export default ScaleDown;

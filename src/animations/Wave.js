@@ -1,4 +1,4 @@
-const WaveAnimation = (duration = 1) => ({
+const Wave = (duration = 1) => ({
 	initial: {
 		pathLength: 0,
 		pathOffset: 0
@@ -13,4 +13,4 @@ const WaveAnimation = (duration = 1) => ({
 	}
 });
 	
-export default WaveAnimation;
+export default Wave;
