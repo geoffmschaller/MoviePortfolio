@@ -1,3 +1,3 @@
 # Movie Portfolio
 
-Just a demo React app.
+Just a demo React app showing cool animations.
