@@ -8,12 +8,15 @@ const PageTransition = (duration = 1) => ({
 		y: 0,
 		transition: {
 			duration: duration,
-			ease: 'easeOut'
+			when: "beforeChildren"
 		}
 	},
 	exit: {
 		opacity: 0,
-		y: 300
+		y: 300,
+		transition: {
+			duration: 0.5
+		}
 	}
 });
 	
